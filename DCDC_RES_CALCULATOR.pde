@@ -13,18 +13,16 @@ String vOut ;
 String vRef ;
 String setR1 ;
 String setR2 ;
-String outR1 ;
-String outR2 ;
+
 
 //声明一个图片类
 PImage img;
-float imgPosition = 4;
 float imgSize = 2;
 
 void setup() {
   size(1200, 900);
-   background(0);
-   PFont font = loadFont("3ds-Light-24.vlw");
+  background(0);
+  PFont font = loadFont("3ds-Light-24.vlw");
   img = loadImage("image/DCDC.png");
   //imageMode(CENTER);
   image(img,0,0,width/imgSize, height);  // Display at full opacity
@@ -152,9 +150,6 @@ public void calculator() {
   }
  
 }
-
-
-
 
 //控制小数的位数
 double fixDec(double n, int d) {
